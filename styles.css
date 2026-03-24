@@ -1,8 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
 
 :root {
+    /* cyan */
+    --clr-cyan-600: hsl(192,37%,48%);
+    --clr-cyan-300: hsl(192,90%,77%);
+
+    /* purple */
+    --clr-purple-600: hsl(268,34%,53%);
+    --clr-purple-300: hsl(268,100%,86%);
+
+    /* slate */
+    --clr-slate-900: hsl(240,21%,20%);
+    --clr-slate-600: hsl(240,10%,57%);
+    --clr-slate-300: hsl(240,18%,85%);
+
+    /* white */
+    --clr-white: hsl(0,0%,98%);
+
     font-family: 'Red Hat Display', Verdana, Geneva, Tahoma, sans-serif;
     font-size: 16px;
+    color: var(--clr-slate-600);
 }
 
 main {
@@ -29,9 +46,41 @@ section {
 /* black = 900 */
 h1 {
     font-weight: 900;
+    font-size: 40px;
+    color: var(--clr-slate-900);
+}
+
+h2 {
+    font-weight: 900;
+    font-size: 32px;
+    color: var(--clr-slate-900);
+}
+
+a {
+    background-color: var(--clr-purple-600);
+    color: var(--clr-white);
+    text-decoration: none;
+    font-weight: 900;
+    padding: 1rem 2rem;
+    border-radius: 32px;
+
+    &.download {
+        background-color: var(--clr-cyan-600);
+        
+        .version {
+            color: var(--clr-cyan-300);
+        }
+    }
+
+    &.download-footer .version {
+        color: var(--clr-purple-300);
+    }
 }
 
 /* medium = 500 */
+.subtitle {
+    color: var(--clr-cyan-600);
+}
 
 .section-number {
     display: flex;
