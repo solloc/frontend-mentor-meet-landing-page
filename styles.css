@@ -22,7 +22,12 @@
     color: var(--clr-slate-600);
 }
 
+body {
+    margin: 0;
+}
+
 main {
+    margin: 2rem;
     display: flex;
     flex-direction: column;
 }
@@ -33,8 +38,14 @@ header {
     align-items: center;
 }
 
+.logo {
+    margin-top: 2rem;
+}
+
 .image-hero-combined {
     max-width: 100%;
+    /* position: relative; */
+    /* bottom: 50px; */
 }
 
 section {
